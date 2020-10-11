@@ -52,6 +52,7 @@ const mapStateToProps = ({ user }) =>({
   currentUser: user.currentUser
 });
 
+//dispatch --> a way for redux to know whatever u pass me its going to be an action object that im going to pass to every reducer
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 });
